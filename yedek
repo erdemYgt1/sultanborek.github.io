@@ -1,0 +1,314 @@
+* {
+
+		
+
+     margin: 0px;
+    padding: 0px;
+}
+
+
+
+.nav {
+	position:fixed;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:center;
+	background:#222;
+	padding:1rem 1rem; 
+	width:100%;
+	z-index:100000;
+}
+
+.nav h2 {
+	color:#fff;
+	font-size=1.7rem;
+}
+
+
+#item{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+
+#item li{
+	list-style:none;
+	padding-right:50px;
+}
+
+#item li a{
+	text-decoration:none;
+	color:#fff;
+	font-size:1rem;
+	text-transform:uppercase;
+}
+
+
+.back{
+
+	background-image:url(anasayfaimage.jpg);
+	width:100%;
+	height:100vh;
+	background-size:cover;
+	z-index:-1;
+
+	margin:0;
+	padding:0;
+}
+
+
+.back .overlay{
+
+	height:100%;
+	width:100%;
+	opacity:0.85;
+	background:#171819;
+
+
+}
+
+
+
+.mid {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+
+
+
+.mid p{
+	color:#7f8c8d;
+	font-size:1.3rem;
+}
+
+
+.mid h2{
+	color:#fff;
+	font-size:3rem;
+	margin:30px;
+	
+}
+
+
+
+.mid .btn a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:500;
+	padding:0.9rem 1.6rem;
+	border:1px solid #ff5733;
+	border-radius:3px;
+}
+
+#item li a:hover{
+	color:#ff5733;
+	cursor:pointer;
+	
+}
+
+.mid .btn a:hover{
+	color:#ff5733;
+	border: 3px solid #ff5733;
+}
+
+
+
+.urunler{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	place-items:center;
+	padding-top:5%;
+	grid-row-gap:40px;
+	grid-column-gap:30px;
+
+background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
+
+.tatlilar{
+	display:flex;
+	width:100%;
+	flex-direction:row;
+	justify-items: center;
+	border-radius:9px;
+}
+.tuzlular{
+	display:grid;
+	width:100%;
+	grid-template-columns:50% 50%;
+	grid-row-gap:50px;
+	justify-items:center;
+	border-radius:9px;
+}
+
+
+.continer{
+        height:220px;
+	top:150px;
+        width:250px;
+        background:#06031a36;
+        border-radius:5px;
+        margin:20px;
+        display:flex;
+	flex-direction:column;
+        justify-content:center;
+        box-shadow:0px 15px 35px rgb(0 0 0 / 60%);
+
+
+
+
+
+}
+ 
+
+
+.continer .item{
+        background:#f3f3f3;
+        width:90%;
+        height:-50px;
+        top:-10px;
+	transform:translate(5%,-37%);
+        box-shadow:0px 15px 35px rgb(0 0 0 / 5%);
+        border-radius:5px;
+	
+}
+
+
+
+
+.continer .text{
+        font-size:20px;
+        top:10px;
+        width:100%;
+        height:60px;
+        text-align:center;
+        color:#fff;
+        font-weight:600;
+	transform:translate(0%,-45%);
+        font-family:'Poppins' ,sans-serif;
+}
+
+
+
+.continer .subtext{
+        bottom:10px;
+        top:80px;
+        color:#fff;
+        letter-spacing:0.1px;
+        font-family:'Poppins' ,sans-serif;
+	transform:translate(0%,-20%);
+        text-align:center;
+        width:100%;
+}
+                                                                      52,1          Bot
+
+
+.hakkimizda{
+	background:#f9f9f9;
+	padding:8rem;
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.hakkimizda .kimiz{
+	width:39%;
+}
+
+
+.hakkimizda .kimiz h2{
+	color:#212529;
+	font-size:2.1rem;
+	padding-bottom:1.1rem;
+}
+.hakkimizda .kimiz p{
+	color:#7f8c8d;
+	font-size:1.1rem;
+}
+.hakkimizda .resimlerimiz{
+	background:#34495e;
+}
+
+.slidershow{
+	width:400px;
+	height:500px;
+	overflow:hidden;
+}
+
+
+.slides{
+	width:500%;
+	height:100%;
+	display:flex;
+}
+
+.slide{
+	width:20%;
+	transition:0.6s;
+}
+
+.slide img{
+	width:100%;
+	height:100%;
+}
+
+.middle{
+	position:absolute;
+	transform:translate(-113%,-52%);
+}
+
+
+.navigation{
+	position:absolute;
+	display:flex;
+	transform:translate(25%,-200%);
+}
+
+
+.bar{
+	width:50px;
+	height:10px;
+	margin-right:5px;
+	cursor:pointer;
+	border:2px solid #fff;
+	transition:0.4s;
+}
+
+
+.bar:hover{
+	background:#fff;
+}
+
+
+input[name="r"]{
+	position:absolute;
+	visibility:hidden;
+}
+
+
+
+#r1:checked ~ .s1{
+        margin-left:0;
+}
+#r2:checked ~ .s1{
+        margin-left:-20%;
+}
+#r3:checked ~ .s1{
+        margin-left:-40%;
+}
+#r4:checked ~ .s1{
+        margin-left:-60%;
+}
+#r5:checked ~ .s1{
+        margin-left:-80%;
+}
+       
+
